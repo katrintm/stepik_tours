@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.views import View
+from django.http import HttpResponseNotFound
 
 
 class MainView(View):
@@ -27,3 +28,7 @@ class TourView(View):
 
             }
         )
+
+    
+ def custom_handler404(request, exception):
+    return HttpResponseNotFound('Пока такой страницы не существует!')
