@@ -4,6 +4,6 @@
 
 # $ source env/bin/activate
 
-# $ cd stepik_tours
+# $ cd stepic_tours
 
 # $ python manage.py runserver
